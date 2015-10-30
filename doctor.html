@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- ie渲染-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="author" content="群生健康">
+<meta name="copyright" content="群生健康">
+<meta name="Description" content="群生健康是一家专业化医疗健康OAO（Online and Offline）服务企业。群生愿景：中国最大的疾病诊后健康管理平台。群生使命：成就健康，实现价值！诚邀加盟，汇聚群生，共创共享，丰富人生。">
+<meta name="Keywords" content="群生健康，群生健康管理（北京）有限公司">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>群生健康—医生版</title>
+<!-- Bootstrap -->
+<link href="common/bootstraps/css/bootstrap.min.css" rel="stylesheet">
+<link href="common/styles/app.css" rel="stylesheet" type="text/css">
+<link href="common/styles/doctor.css" rel="stylesheet" type="text/css"> 
+<!--<script src="common/scripts/jquery-1.10.1.min.js"></script> -->
+<script src="common/scripts/jquery-1.10.1.min.js"></script>
+<script src="common/bootstraps/js/modernizr-1.5.min.js"!important></script>    
+    <script>
+        if (!$.support.leadingWhitespace) {
+            $("#browser_ie").show();
+        }
+    </script>      
+<style type="text/css">
+@media (min-width:1400px){
+    .navbar-brand img{
+         margin-left: 200px;
+    }
+}
+@media (max-width:1200px){
+    .navbar .navbig ul li{
+        float: none;
+        width: 100%;
+        margin-left: 50px;
+    }
+    .pull-right {
+        float: none !important;
+    }
+    .navbar .navbig ul li .flatbtn span{
+        margin-left: 0;
+    }
+}
+@media (max-width:1200px){
+    .navbar .navbig ul li a {
+    line-height: 50px;
+    }
+}
+
+@media (max-width:768px){
+    .qs-docor-img{
+        margin-top: 100px;
+    }
+}
+@media (min-width:1008px) and (max-width:1200px){
+    .navbar .navbig ul li {
+        width: 10%;
+        margin-left: 30px;
+    }
+    .pull-right{
+        margin-left: 200px;
+        margin-right: 0;
+        margin-top: -80px;
+    }
+    #bs-example-navbar-collapse-1 ul {
+    margin-right: 0;
+    }
+    .navbar .navbig ul li .flatbtn span {
+        padding: 5px;
+    }
+    .container-fluid-min{
+        height: 100px;
+    }
+}
+@media (min-width:1008px) and (max-width:1300px){
+    .qs-lxxz{
+        padding-top: 150px;
+    }
+}
+@media (min-width:1200px) and (max-width:1300px){
+    .qs-lxxz{
+        padding-bottom: 100px;
+        padding-top: 50px;
+    }
+}
+</style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="common/bootstraps/js/html5shiv.js"></script>
+<script src="common/bootstraps/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- header start-->
+<header class="navbar navbar-default navbar-fixed-top navbar-inner nav-clarity" role="navigation" style="background-color: #fff;">
+    <div class="container-fluid container-fluid-min">
+        <div class="navbar-header" style="">
+            <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--logo image-->
+            <a class="navbar-brand" href="index.html"><img alt="logo" src="common/images/qs-logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse  navbig" style="height: 100%" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav pull-right">
+                <li><a href="index.html">&nbsp;首页&nbsp;</a></li>
+                <li class="active"><a href="doctor.html">医生版</a></li>
+                <li><a href="public.html">患者版</a></li>
+                <li><a href="about.html">关于群生</a></li>
+                <li><a href="join.html">加入我们</a></li>
+                <li><a href="#loginmodal" class="flatbtn" id="modaltrigger"><span class="login-font">用户登录</span></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- header stop -->
+<div style="display:none;" id="browser_ie">
+    <div class=brower_info>
+        <div class=notice_info>
+            <P>你的浏览器版本过低，可能导致网站不能正常访问！<br>为了你能正常使用网站功能，请使用这些浏览器。</P></div>
+            <div class=browser_list>
+            <span>
+            <a href="http://www.qshealthcare.com/" target=_blank>
+            <img src="common/images/ie/Chrome.png"><br>Chrome
+            </a>
+            </span>
+            <span><a href="http://www.qshealthcare.com/" target=_blank>
+            <img src="icommon/images/ie/Firefox.png"><br>Firefox
+            </a></span>
+            <span><a href="http://www.qshealthcare.com/" target=_blank>
+            <img src="common/images/ie/Safari.png"><br>Safari
+            </a></span>
+            <span><a href="http://www.qshealthcare.com/" target=_blank>
+            <img src="common/images/ie/IE.png"><br>IE9及以上
+            </a></span>
+        </div>
+    </div>
+</div>
+<!-- banner start -->
+<section style="overflow: hidden; position: relative;">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 qs-docor-img">
+            <a><img style="width:100%;" src="common/images/doc/qs-doctor-head-banner.jpg" title="群生健康医生版" alt="群生健康医生版"></a>
+        </div>
+    </div>
+</div>
+</section>
+<!-- banner stop -->
+<div class="container qs-doc-text">
+<p class="qs-doc-title">跨地域、跨学科的实践医学社区，让医生更高效地实现价值</p>
+</div>
+<!-- qs-doc-content nav start -->
+<section>
+<div class="container-fluid">
+    <div class="row qs-doc-icon">
+        <a href="#learn">
+        <div class="col-xs-12 col-sm-6 col-md-3 qs-doctor-icona">
+            <div class="qs-doc-icon-content">
+            <img src="common/images/doc/ico/qs-doctor-navbar-learn.png">
+            <p class="qs-doc-icon-big2">学习研讨</p>
+            </div>
+        </div>
+        </a>
+        <a href="#contact">
+        <div class="col-xs-12 col-sm-6 col-md-3 qs-doctor-iconb">
+            <div class="qs-doc-icon-content">
+                <img src="common/images/doc/ico/qs-doctor-navbar-relation.png" style="width: 122px;">
+                <p class="qs-doc-icon-big2">联系协作</p>
+            </div>
+        </div>
+        </a>
+        <a href="#patient">
+        <div class="col-xs-12 col-sm-6 col-md-3 qs-doctor-iconc">
+            <div class="qs-doc-icon-content">
+                <img src="common/images/doc/ico/qs-doctor-navbar-patient.png">
+                <p class="qs-doc-icon-big2">患者管理</p>
+            </div>
+        </div>
+        </a>
+        <a href="#value">
+        <div class="col-xs-12 col-sm-6 col-md-3  qs-doctor-icond">
+            <div class="qs-doc-icon-content">
+                <img src="common/images/doc/ico/qs-doctor-navbar-value.png" style="width: 130px;">
+                <p class="qs-doc-icon-big2">价值实现</p>
+            </div>
+        </div>
+        </a>
+    </div>
+</div>
+</section>
+<!-- qs-doc-content nav stop -->
+<!-- qs-doc-content list start -->
+<section  id="learn">
+<div class="container-fluid qs-doctor-note">
+    <div class="row qs-doc-icon-bg">
+        <div class="col-md-12">
+            <p class="qs-doc-icon-big qs-doctor-titlea">学习研讨</p>
+            <div class="row qs-doc-icon-top">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="common/images/doc/ico/qs-doctor-main-observe.png">
+                    <h3 class="qs-doc-iocn-title">洞察</h3>
+                    <p class="qs-doc-icon-text">追踪学科（重点会议）进展，洞察专业前沿</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="common/images/doc/ico/qs-doctor-main-study.png">
+                    <h3 class="qs-doc-iocn-title">学习</h3>
+                    <p class="qs-doc-icon-text">学习专家经验，了解临床热点和新颖的循证医学观点</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="common/images/doc/ico/qs-doctor-main-discuss.png">
+                    <h3 class="qs-doc-iocn-title">研讨</h3>
+                    <p class="qs-doc-icon-text">参与病例研讨，比照同行，强化诊疗思维</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <img src="common/images/doc/ico/qs-doctor-main-interact.png">
+                    <h3 class="qs-doc-iocn-title">互动</h3>
+                    <p class="qs-doc-icon-text">就临床热点问题向专家及同行提问，获得解答和帮助</p>
+                </div>
+            </div>
+            <div class="row qs-doc-doc-main" style="margin-top:50px;">
+                <div class="col-md-12">
+                    <img src="common/images/doc/qs-doctor-main-photo-01.png"  style="text-align: center;max-width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section  id="contact">
+<div class="container qs-doctor-noteb">
+    <div class="row qs-doc-icon-bg">
+        <div class="col-xs-12 col-sm-8 col-md-6">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <p class="qs-doc-icon-big">联系协作</p>
+                </div>
+            </div>
+            <div class="row qs-doc-icon-one">
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    <img src="common/images/doc/ico/qs-doctor-main-find.png">
+                    <h3 class="qs-doc-iocn-title">发现</h3>
+                    <p class="qs-doc-icon-text">发现感兴趣的专家和同行，找到协作圈子</p>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    <img src="common/images/doc/ico/qs-doctor-main-exchange.png">
+                    <h3 class="qs-doc-iocn-title">交流</h3>
+                    <p class="qs-doc-icon-text">与专家和同行沟通，交流医者感受</p>
+                </div>
+            </div>
+            <div class="row qs-doc-icon-two">
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    <img src="common/images/doc/ico/qs-doctor-main-share.png">
+                    <h3 class="qs-doc-iocn-title">分享</h3>
+                    <p class="qs-doc-icon-text">分享临床诊疗观点、治疗方案和用药方法</p>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    <img src="common/images/doc/ico/qs-doctor-main-team.png">
+                    <h3 class="qs-doc-iocn-title">协作</h3>
+                    <p class="qs-doc-icon-text">与专家和同行协作解决疑难临床病例</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6 qs-lxxz" style="margin-top: 10px;">
+            <img style="width:100%;" src="common/images/doc/qs-doctor-main-photo-02.png" >
+        </div>
+    </div>
+</div>
+</section>
+<section  id="patient">
+<div class="container qs-doctor-notec">
+    <div class="row qs-doc-icon-bg">
+        <div class="col-xs-12 col-sm-8 col-md-6 qs-doctor-photo qs-lxxz">
+            <img src="common/images/doc/qs-doctor-main-photo-03.jpg" style="width:100%;">
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-6" style="margin-top: 60px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="qs-doc-icon-big">患者管理</p>
+                </div>
+            </div>
+            <div class="row qs-doc-icon-one">
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    <img src="common/images/doc/ico/qs-doctor-main-screen.png">
+                    <h3 class="qs-doc-iocn-title">筛选患者</h3>
+                    <p class="qs-doc-icon-text">从就诊过的患者和系统推荐的患者中选择合适的患者</p>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    <img src="common/images/doc/ico/qs-doctor-main-clinic.png">
+                    <h3 class="qs-doc-iocn-title">管理诊疗</h3>
+                    <p class="qs-doc-icon-text">确定诊疗开通的服务项目、价格和服务时间</p>
+                </div>
+            </div>
+            <div class="row qs-doc-icon-two">
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    <img src="common/images/doc/ico/qs-doctor-main-consult.png">
+                    <h3 class="qs-doc-iocn-title">咨询指导</h3>
+                    <p class="qs-doc-icon-text">接收患者的病情咨询，给予个性化的随访计划及预后指导</p>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-6">
+                    <img src="common/images/doc/ico/qs-doctor-main-enhance.png">
+                    <h3 class="qs-doc-iocn-title">提高效率</h3>
+                    <p class="qs-doc-icon-text">连续性收集和整合患者的健康信息，提高医疗效率</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<section id="value">
+<div class="container-fluidqs-doctor-noted">
+    <div class="row qs-doc-icon-bg">
+        <div class="col-md-12">
+            <p class="qs-doc-icon-big qs-doctor-accumulate">价值实现</p>
+            <div class="row qs-doc-icon-top">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <img src="common/images/doc/ico/qs-doctor-main-accumulate.png">
+                    <h3 class="qs-doc-iocn-title">积累患者</h3>
+                    <p class="qs-doc-icon-text">与患者建立长久联系，积累自己的患者粉丝群和科研病例</p>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <img src="common/images/doc/ico/qs-doctor-main-increase.png">
+                    <h3 class="qs-doc-iocn-title">增加收入</h3>
+                    <p class="qs-doc-icon-text">凭借个人专长、技能和经验增加合法收入</p>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <img src="common/images/doc/ico/qs-doctor-main-award.png">
+                    <h3 class="qs-doc-iocn-title">获得奖励</h3>
+                    <p class="qs-doc-icon-text">参与线上线下举办的学术活动和市场调查等有奖任务，获得回报</p>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <img src="common/images/doc/ico/qs-doctor-main-erect.png">
+                    <h3 class="qs-doc-iocn-title">树立声望</h3>
+                    <p class="qs-doc-icon-text">提高自己在医生和患者群中的声望，塑造个人品牌，实现职业价值</p>
+                </div>
+            </div>
+            <div class="row qs-doc-main">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <img src="common/images/doc/qs-doctor-main-photo-04.png" style=" max-width: 100%;text-align: center;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- qs-doc-content list stop -->
+<!-- qs-download start -->
+<section>
+<div class="container-fluid qs-download-bg">
+    <div class="row qs-doc-icon-bg">
+        <div class="col-md-12">
+            <p class="qs-doc-icon-big" style="margin-top: 150px;">请选择您的平台下载</p>
+            <div class="row qs-app-download">
+                <div class="col-md-2 col-sm-6 col-xs-12"></div>
+                <div class="col-md-2 col-sm-6 col-xs-12">
+                        <a>
+                            <img style="max-width: 100%;" src="common/images/doc/qs-download-iph.png">
+                        </a>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2 col-sm-6 col-xs-12">
+                        <a>
+                            <img style="max-width: 100%;" src="common/images/doc/qs-download-and.png">
+                        </a>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-2 col-sm-6 col-xs-12">
+                        <a>
+                            <img style="max-width: 100%;" src="common/images/doc/qs-md.png">
+                        </a>
+                </div>
+                <div class="col-md-2 col-sm-6 col-xs-12"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- qs-download stop -->
+<!-- footer start -->
+<div class="qs-footer">
+    <div class="qs-footer-center">
+        <a href="about.html"><span>关于群生</span></a>
+        <a href="privacy.html"><span class="qs-footer-ml">隐私条款</span></a>
+        <a href="contact.html"><span class="qs-footer-ml">联系我们</span></a>
+        <br/><br/>
+        <!-- <span>客服热线：400-000-0000</span><br/> -->
+        <span>&copy;2015 群生健康管理（北京）有限公司</span><br/>
+        <span>京ICP备 14050310号</span>
+        <span>京公网安备 11010802018027号</span><br/>
+    </div>
+</div>
+<!-- footer stop -->
+<div id="loginmodal" class="qs-login">
+    <h1 class="qs-login-h1" style="">用户登录
+        <img id="imgclose" style="" src="common/images/qs-Login-wrong.png">
+    </h1>
+    <form id="loginform" name="loginform" method="post" action="">
+
+        <input type="text"  value="" class="qs-login-a" tabindex="1" readonly="readonly" style=""> 
+        <img class="qs-login-img1" src="common/images/qs-Login-user.png" style="">
+        <input type="text" name="username" id="username" placeholder="请输入手机号" class="qs-login-b" tabindex="2"  style=""> 
+
+        <input type="text"  value="" class="qs-login-c" tabindex="3" readonly="readonly"  style=""> 
+        <img class="qs-login-img1" src="common/images/qs-Login-password.png"  style="">                       
+        <input type="password" name="password" id="password" placeholder="请输入密码" class="qs-login-d" tabindex="4" s style=""> 
+
+        <input onclick="login()" type="submit" name="loginbtn" id="" class="flatbtn-blu hidemodal qs-login-btn" value="登录" tabindex="3"style="">
+        <!--<div id="login-error" class="login-error">
+        <img src="common/images/qs-Login-failure.png" style="">请输入正确帐号和密码
+        </div>-->
+    </form>
+</div>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="common/bootstraps/js/bootstrap.min.js"></script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/jquery.leanModal.min.js"></script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/qs-login-model.js"></script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/qs-login.js"></script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/qs-login-pointer.js"></script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/qs-login-close.js"></script>
+</body>
+</html>

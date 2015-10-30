@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<!-- ie渲染-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=9" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+<meta name="author" content="群生健康">
+<meta name="copyright" content="群生健康">
+<meta name="Description" content="群生健康是一家专业化的第三方医疗健康服务平台。群生愿景：中国最大的疾病诊后健康管理平台。群生使命：成就健康，实现价值！诚邀加盟，汇聚群生，共创共享，丰富人生。">
+<meta name="Keywords" content="群生健康，群生健康管理（北京）有限公司">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>群生健康—中国专业的诊后康复和慢病管理平台</title>
+<!-- Bootstrap -->
+<link href="common/bootstraps/css/bootstrap.min.css" rel="stylesheet">
+<link href="common/styles/app.css" media="screen and (max-width:1200px)" rel="stylesheet" type="text/css">
+<link href="common/styles/app1.css" media="screen and (min-width:1200px)" rel="stylesheet" type="text/css">
+<script src="common/scripts/jquery-1.10.1.min.js"></script>
+<script src="common/bootstraps/js/modernizr.js"!important></script>  
+<!--[if lt IE 9]>
+<script type="text/javascript" src="common/scripts/PIE.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    $(function() {
+    if (window.PIE) {
+        $('.rounded').each(function() {
+            PIE.attach(this);
+        });
+    }
+});
+</script>
+    <script>
+        if (!$.support.leadingWhitespace) {
+            $("#browser_ie").show();
+        }
+    </script>
+
+<style>
+@media (min-width:1400px){
+	.navbar-brand img{
+		 margin-left: 200px;
+	}
+}
+@media (max-width:1200px){
+    .navbar .navbig ul li{
+        float: none;
+        width: 100%;
+        margin-left: 50px;
+    }
+    .pull-right {
+        float: none !important;
+    }
+    .navbar .navbig ul li .flatbtn span{
+        margin-left: 0;
+    }
+}
+@media (max-width:1200px){
+    .navbar .navbig ul li a {
+    line-height: 50px;
+    }
+}
+@media (max-width:768px){
+    .qs-choice-line{
+         display: none;
+    }
+    .qs-choice-bg{
+          height: 200px;
+    }
+    .qs-choice-bg{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .carousel-inner{
+        margin-top: 100px;
+    }
+}
+@media (min-width:1008px) and (max-width:1200px){
+    .navbar .navbig ul li {
+        width: 10%;
+        margin-left: 30px;
+    }
+    .pull-right{
+        margin-left: 200px;
+        margin-right: 0;
+        margin-top: -80px;
+    }
+    #bs-example-navbar-collapse-1 ul {
+    margin-right: 0;
+    }
+    .navbar .navbig ul li .flatbtn span {
+        padding: 5px;
+    }
+    .container-fluid-min{
+        height: 100px;
+    }
+}
+</style>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="common/bootstraps/js/html5shiv.js"></script>
+<script src="common/bootstraps/js/respond.min.js"></script>
+<![endif]-->
+<!--[if lte IE 8]> 
+<noscript>
+     <style>.html5-wrappers{display:none!important;}</style>
+     <div class="ie-noscript-warning">您的浏览器禁用了脚本，请<a href="">查看这里</a>来启用脚本!或者<a href="/?noscript=1">继续访问</a>.
+     </div>
+</noscript>
+<![endif]-->
+</head>
+<body>
+<!-- header start-->
+<header class="navbar navbar-default navbar-fixed-top navbar-inner nav-clarity" role="navigation" style="background-color: #fff;">
+    <div class="container-fluid container-fluid-min">
+        <div class="navbar-header" style="">
+            <button type="button" class="navbar-toggle  collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--logo image-->
+            <a class="navbar-brand" href="index.html"><img alt="logo" src="common/images/qs-logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse  navbig" style="height: 100%" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav pull-right">
+                <li class="active"><a href="index.html">&nbsp;首页&nbsp;</a></li>
+                <li><a href="doctor.html">医生版</a></li>
+                <li><a href="public.html">患者版</a></li>
+                <li><a href="about.html">关于群生</a></li>
+                <li><a href="join.html">加入我们</a></li>
+                <li><a href="#loginmodal" class="flatbtn" id="modaltrigger"><span class="login-font">用户登录</span></a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- header stop -->
+<div style="display:none;" id="browser_ie">
+    <div class=brower_info>
+        <div class=notice_info>
+            <P>你的浏览器版本过低，可能导致网站不能正常访问！<br>为了你能正常使用网站功能，请使用这些浏览器。</P></div>
+            <div class=browser_list>
+            <span>
+            <a href="http://www.qshealthcare.com/" target=_blank>
+            <img src="common/images/ie/Chrome.png"><br>Chrome
+            </a>
+            </span>
+            <span><a href="http://www.qshealthcare.com/" target=_blank>
+            <img src="icommon/images/ie/Firefox.png"><br>Firefox
+            </a></span>
+            <span><a href="http://www.qshealthcare.com/" target=_blank>
+            <img src="common/images/ie/Safari.png"><br>Safari
+            </a></span>
+            <span><a href="http://www.qshealthcare.com/" target=_blank>
+            <img src="common/images/ie/IE.png"><br>IE9及以上
+            </a></span>
+        </div>
+    </div>
+</div>
+<!-- banner start -->
+<section style="overflow: hidden;">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-md-12 qs-banner">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators" style="">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">
+                             <!-- <h3>医患沟通</h3>
+                            <p>快捷的与医生交流和咨询您的健康状况和康复问题</p> -->
+                        </li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class="qs-banner-ml">
+                            <!-- <h3>医生协作</h3>
+                            <p>与专家和同行协作解决疑难临床病例</p> -->
+                        </li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class="qs-banner-ml">
+                             <!-- <h3>患者互助</h3>
+                            <p>与患友分享病例诊疗经验，提供参考，帮助决策</p> -->
+                        </li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3" class="qs-banner-ml">
+                             <!-- <h3>患者互助</h3>
+                            <p>与患友分享病例诊疗经验，提供参考，帮助决策</p> -->
+                        </li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox" >
+
+                        <div class="item active">
+                            <a><img src="common/images/qs-home-banner-01.jpg" alt="" title=""></a>
+                            <div class="bs-docs-header qs-listbox-img" tabindex="-1">
+                                <!--<p>在群生，我可以很方便的跟医生交流我的康复进展，让深处异地的我再也不用为一点小状况就承受奔波之苦了。</p> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a><img src="common/images/qs-home-banner-02.jpg" alt="" title=""></a>
+                            <div class="bs-docs-header qs-listbox-img" tabindex="-1">
+                                <!--<p>在群生，我可以很方便的跟医生交流我的康复进展，让深处异地的我再也不用为一点小状况就承受奔波之苦了。</p> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a><img src="common/images/qs-home-banner-03.jpg" alt="" title=""></a>
+                            <div class="bs-docs-header qs-listbox-img" tabindex="-1">
+                                <!--<p>在群生，我可以很方便的跟医生交流我的康复进展，让深处异地的我再也不用为一点小状况就承受奔波之苦了。</p> -->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a><img src="common/images/qs-home-banner-04.jpg" alt="" title=""></a>
+                            <div class="bs-docs-header qs-listbox-img" tabindex="-1">
+                                <!--<p>在群生，我可以很方便的跟医生交流我的康复进展，让深处异地的我再也不用为一点小状况就承受奔波之苦了。</p> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- banner stop -->
+<!--Identity Choice start -->
+<section class="qs-choice">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-4 qs-choice-bg">
+                <p class="qs-identity" >
+                    我是患者
+                </p>
+                <a type="button" class="btn btn-default qs-clickin" href="public.html"><span>点击进入</span></a>
+            </div>
+            <div class="col-md-2">
+                <div class="qs-choice-line"></div>
+            </div>
+            <div class="col-md-4 qs-choice-bg">
+                <p class="qs-identity">
+                    我是医生
+                </p>
+                <a type="button" class="btn btn-default qs-clickin" href="doctor.html"><span>点击进入</span></a>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+    </div>
+</section>
+<!--Identity Choice stop -->
+<!-- footer start -->
+<div class="qs-footer">
+    <div class="qs-footer-center">
+        <a href="about.html"><span>关于群生</span></a>
+        <a href="privacy.html"><span class="qs-footer-ml">隐私条款</span></a>
+        <a href="contact.html"><span class="qs-footer-ml">联系我们</span></a>
+        <br/><br/>
+        <!-- <span>客服热线：400-000-0000</span><br/> -->
+        <span>&copy;2015 群生健康管理（北京）有限公司</span><br/>
+        <span>京ICP备 14050310号</span>
+        <span>京公网安备 11010802018027号</span><br/>
+    </div>
+</div>
+
+<div id="loginmodal" class="qs-login">
+    <h1 class="qs-login-h1" style="">用户登录
+        <img id="imgclose" style="" src="common/images/qs-Login-wrong.png">
+    </h1>
+    <form id="loginform" name="loginform" method="post" action="">
+
+        <input type="text"  value="" class="qs-login-a" tabindex="1" readonly="readonly" style=""> 
+        <img class="qs-login-img1" src="common/images/qs-Login-user.png" style="">
+        <input type="text" name="username" id="username" placeholder="请输入手机号" class="qs-login-b" tabindex="2"  style=""> 
+
+        <input type="text"  value="" class="qs-login-c" tabindex="3" readonly="readonly"  style=""> 
+        <img class="qs-login-img1" src="common/images/qs-Login-password.png"  style="">                       
+        <input type="password" name="password" id="password" placeholder="请输入密码" class="qs-login-d" tabindex="4" s style=""> 
+
+        <input onclick="login()" type="submit" name="loginbtn" id="" class="flatbtn-blu hidemodal qs-login-btn" value="登录" tabindex="3"style="">
+    </form>
+</div>
+<div id="idwrong"><p><span class="idwrong"><img src="common/images/qs-Login-failure.png">帐号或密码错误，请重新输入!</span></p></div>
+<!-- footer stop -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+<script type="text/javascript" src="common/bootstraps/js/PIE.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="common/bootstraps/js/bootstrap.min.js"></script>
+<script>
+   $(function(){
+      // 初始化轮播
+         $('#carousel-example-generic').carousel({interval: 3000
+        }) 
+   });
+</script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/jquery.leanModal.min.js"></script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/qs-login-model.js"></script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/qs-login.js"></script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/qs-login-pointer.js"></script>
+<script charset="utf-8" language="javascript" type="text/javascript" src="common/scripts/qs-login-close.js"></script>
+</body>
+</html>

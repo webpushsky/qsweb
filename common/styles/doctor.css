@@ -1,0 +1,176 @@
+    /*qs-doctor-start*/
+    .qs-doctor-bg{
+        position:fixed; 
+        background-color: #fff;"
+    }
+
+    .qs-doc-text{
+        width: 100%;
+        padding: 0px;
+        background-color: #fff;
+    }
+
+    .qs-doc-title{
+        font-size: 40px;
+        color: #333;
+        display: block;
+        text-align: center;
+        margin: 50px auto;
+    }
+    .qs-docor-img{
+        width: 100%; 
+        padding: 0px;
+    }
+    /*qs-doc-icon start*/
+    .qs-doc-icon{
+        height: 400px;
+        line-height: 400px;
+    }
+
+    .qs-doc-icon-bg{
+        text-align: center;
+    }
+    .qs-doctor-icona{
+        background-color: #4594e5;
+        height: 400px;
+    }
+    .qs-doctor-iconb{
+        background-color: #21aadd;
+        height: 400px;
+    }
+    .qs-doctor-iconc{
+        background-color: #39cb73;
+        height: 400px;
+    }
+    .qs-doctor-icond{
+        background-color: #83c24b;
+        height: 400px;
+    }
+    .qs-doc-icon-top{
+        margin-top: 62px;
+    }
+
+    .qs-doc-icon-content{
+        height: 110px;
+        line-height: 110px;
+    }
+    .qs-doc-icon-content img{
+        width: 110px;
+        height: 100px;
+        margin-top:100px;
+    }
+    .qs-doc-icon-big{
+        font-size: 40px;
+        color: #333;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .qs-doc-icon-big2{
+        font-size: 40px;
+        color: #fff;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .qs-doctor-note{
+        background-color: #fff;
+        width: 100%; 
+        margin: 0 auto;
+    }
+    .qs-doctor-noteb{
+        background-color: #f7f7f7; 
+        width: 100%;  
+        margin-top: 120px;
+    }
+    .qs-doctor-notec{
+        background-color: #fff; 
+        min-width: 100%; 
+    }
+    .qs-doctor-noted{
+        background-color: #f7f7f7; 
+        width: 100%; 
+        margin: 0 auto;
+    }
+    .qs-doctor-titlea{
+        color: #333; 
+        margin-top: 50px;
+    }
+    .qs-doctor-titleb{
+        color: #333; 
+        margin-top: 50px;
+    }
+    .qs-doctor-titlec{
+        color: #333; 
+        margin-top: 50px;
+    }
+    .qs-doctor-titled{
+        color: #333; 
+        margin-top: 50px;
+    }
+
+    .qs-doc-iocn-title{
+        font-size: 30px;
+        color: #333;
+    }
+
+    .qs-doc-iocn-text{
+        font-size: 18px;
+        color: #666;
+    }
+
+    .qs-doc-main{
+        margin-top: 80px;
+    }
+    .qs-doc-icon-one{
+        margin-top: 100px;
+    }
+
+    .qs-doc-icon-two{
+        margin-top: 100px;
+    }
+    /*qs-doc-icon stop*/
+    /*qs-app-download start*/
+    .qs-app-download{
+        margin-top: 100px;
+        margin-bottom: 120px;
+    }
+    .qs-download-bg{
+        background-color: #fff; 
+        width: 100%; 
+        margin: 0 auto;
+    }
+
+
+    /*qs-app-download stop*/
+    .qs-doctor-photo{
+        margin-top: 60px; 
+    }
+    .qs-doctor-accumulate{
+        color: #333; 
+        margin-top: 50px;
+    }
+    
+    /*qs-public-html*/
+    .qs-public-bg{
+        position:fixed; 
+        background-color: #fff;
+    }
+    .qs-public--icona{
+        background-color: #27c7a5;
+        height: 400px;
+    }
+    .qs-public--iconb{
+        background-color: #39cd75;
+        height: 400px;
+    }
+    .qs-public--iconc{
+        background-color: #22abe1;
+        height: 400px;
+    }
+    .qs-public--icond{
+        background-color: #399ade;
+        height: 400px;
+    }
+    .qs-doc-icon-mt{
+        margin-top: 50px;
+    }

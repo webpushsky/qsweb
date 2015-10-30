@@ -1,0 +1,79 @@
+    /*qs-join start*/
+    .qs-team{
+        margin: auto;
+        background-color: #fff;
+        text-align: center;    
+    }
+    .qs-team p{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size:40px;
+        line-height: 1.1;
+        margin: 0;
+    }
+    .tab-content h3{
+        margin-top: 5px;
+        margin-bottom: 50px;
+    }
+    .tab-content .tab-pane{
+        line-height: 26px;
+        min-height: 800px;
+    }
+    .qs-content-bt{
+        padding-bottom: 30px;
+    }
+    .qs-footer-join{
+        padding-top: 30px;
+    }
+    .qs-content-bh{
+        padding-top: 100px;
+    }
+    .qs-join-nav{
+        width: 220px;
+        text-align: center;
+        border:0px;
+    }
+    .qs-join-nav li{
+        height: 40px;
+        line-height: 40px;
+        margin-top:0px;
+        text-align: left;
+    }
+    .qs-join-nav li a:hover{
+        background-color:transparent;
+    }
+    .qs-join-nav li a{
+        color: #333;
+        font-size: 18px;
+        border: 0px;
+        z-index: 2;
+        background-color:transparent;
+    }
+    .qs-join-nav li.active{
+        height: 40px;
+        line-height: 40px;
+        background-color: #21aadd;
+        color: #fff;
+        outline:none;
+    }
+    .nav-tabs > li {
+        margin-bottom: 2px;
+    }
+    .qs-join-nav li.active a,
+    .qs-join-nav li.active a:focus,
+    .qs-join-nav li.active a:hover{
+        color: #fff;
+        border: none;
+        background-color:transparent;
+    }
+    .nav-tabs > li > a {
+    border-radius: 0;
+    }
+    /*qs-join stop*/
+    .join-top{
+        margin-top: 50px;
+    }
+
+    .qs-footer .qs-footer-center {
+        padding-top: 0px;
+    }
